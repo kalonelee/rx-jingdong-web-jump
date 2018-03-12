@@ -1,0 +1,12 @@
+<prescription xmlns="http://greenify.github.io/schemas/prescription/v3" type="activity" sender="other">
+  <intent-filter>
+    <action name="android.intent.action.VIEW" />
+    <scheme name="market" />
+    <ssp prefix="//details?id=com.jingdong.app.mall" />
+  </intent-filter>
+  <intent-filter>
+    <action name="android.intent.action.VIEW" />
+    <scheme name="http" />
+    <ssp sglob="//market.android.com/.*com.jingdong.app.mall.*" />
+  </intent-filter>
+</prescription>
